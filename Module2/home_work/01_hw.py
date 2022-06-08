@@ -8,7 +8,8 @@
 n = int(input('кол-во долек c одной стороны:'))
 m = int(input('кол-во долек c другой стороны:'))
 k = int(input('кол-во долек после разлома:'))
-if k % n == 0 or k % m == 0:
+s = n * m
+if (k % n == 0 or k % m == 0) and k < s:
     print('YES')
 else:
     print('NO')
