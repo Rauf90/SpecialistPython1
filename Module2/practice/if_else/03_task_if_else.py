@@ -2,4 +2,16 @@
 # Формат входных данных: дано три натуральных числа. Гарантируется, что отрезки с данными длинами образуют треугольник.
 # Формат выходных данных: Выведите «YES», если треугольник равнобедренный, и «NO» в противном случае.
 
-# TODO: your code here
+a = int(input('Сторона а:'))
+b = int(input('Сторона b:'))
+c = int(input('Сторона c:'))
+if a == b and a != c and b != c:
+    print('YES')
+elif a == c and a != b and c != b:
+    print('YES')
+
+elif b == c and b != a and c != a:
+    print('YES')
+
+else:
+    print('NO')
