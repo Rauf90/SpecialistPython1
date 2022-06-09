@@ -2,13 +2,9 @@
 # Формат входных данных: Целое положительно число
 # Формат выходных данных: Если число оканчивается цифрой 5, вывести «YES», в противном случае — вывести «NO».
 
-# TODO: your code here
 number = int(input("Целое число:"))
-
-Result = number / 5
-
-Check = Result
-if Check % 2 == 0:
-    print('NO')
-else:
+if number % 10 == 5:
     print('YES')
+else:
+    print('NO')
+
