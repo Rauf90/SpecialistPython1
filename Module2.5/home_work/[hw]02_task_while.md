@@ -21,5 +21,13 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
-```
+a = int(input("Число а: "))
+b = int(input("Число b: "))
+while a <= b:
+    if a % 5 == 0:  # Если число кратно 5
+        print(a)  # то выводим его
+    a += 1
+while a >= b:
+    if b % 5 == 0:  # Если число кратно 5
+        print(b)  # то выводим его
+    b += 1
